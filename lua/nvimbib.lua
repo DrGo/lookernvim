@@ -58,7 +58,6 @@ function M.new(filename, config)
 		linetext = string.match(linetext, "{(.+),")
 		if not isempty(linetext) then
 			linetext = string.format("[@{%s};]", linetext)
-			-- vim.print("modifying buffer:", m.buf)
 			api.nvim_buf_set_text(self.destbuf, self.destrow - 1, self.destcol, self.destrow - 1, self.destcol,
 				{ linetext })
 		end
