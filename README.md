@@ -1,5 +1,5 @@
 # Looker.nvim  
-A basic neovim plugin to lookup information in arbitrary file, 
+A basic neovim plugin to lookup information in an arbitrary file, 
 and optionally insert it in the current buffer at the cursor.  
 For instance, I use it to search a bibtex/biblatex file and insert a selected citation key 
 in a markdown file. In fact, this functionality is included as the `Bib` command
@@ -63,7 +63,7 @@ Alternatively, you could define a standard user command
 For example, this is how the `bib` command is created:
 
 ```lua 
-	vim.api.nvim_create_user_command("Bib", 'Lookup bib', { nargs = '?', complete = 'file' })
+vim.api.nvim_create_user_command("Bib", 'Lookup bib', { nargs = '?', complete = 'file' })
 ```
 The custom lookup table (called `search_spec`) should have the following entries: 
 + `searchfile`: path to a file to open by default (when no file is specified in the lookup command).
@@ -88,3 +88,7 @@ the `opts` table) and the second is a path to file to be opened for searching.
 ## Limitations 
 - inserts one entry at a time. 
 
+## License 
+MIT License
+
+Copyright (c) 2023 Salah Mahmud
