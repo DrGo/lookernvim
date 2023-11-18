@@ -1,5 +1,5 @@
 vim.api.nvim_create_user_command("Lookup", function(opts)
-	local err = require("nvimbib").lookup(opts)
+	local err = require("lookernvim").lookup(opts)
 	if err ~= nil then
 		error(err)
 	end
