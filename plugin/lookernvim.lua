@@ -1,3 +1,4 @@
+-- Copyright (c) 2023 Salah Mahmud
 vim.api.nvim_create_user_command("Lookup", function(opts)
 	local err = require("lookernvim").lookup(opts)
 	if err ~= nil then

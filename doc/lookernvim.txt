@@ -1,5 +1,6 @@
 lookernvim.txt
 
+Copyright (c) 2023 Salah Mahmud
 ================================================================================
 CONTENTS                                                     *lookernvim-contents*
 

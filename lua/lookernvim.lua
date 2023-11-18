@@ -1,3 +1,4 @@
+-- Copyright (c) 2023 Salah Mahmud
 local M = {}
 local api = vim.api
 
