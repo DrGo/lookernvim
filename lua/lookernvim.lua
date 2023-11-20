@@ -7,7 +7,7 @@ M.config = {
 		search_file = '',
 		record_marker = "@",
 		extract_id_regex = "{(.+),",
-		id_format = "[@{%s};]",
+		id_format = "[@{%s}]",
 		close_on_selection = true,
 	},
 }
